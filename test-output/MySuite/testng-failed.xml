@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MySuite]" parallel="tests">
+  <listeners>
+    <listener class-name="utility.ReportGenrator"/>
+  </listeners>
+  <test name="FireFoxTests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="scripts.web.Login">
+        <methods>
+          <include name="setUpBeforeBaseMethod"/>
+          <include name="beforeTestBaseClass"/>
+          <include name="getdriver"/>
+          <include name="loginWithInvalidPassword"/>
+          <include name="tearDown"/>
+          <include name="beforeTestSetUp"/>
+        </methods>
+      </class> <!-- scripts.web.Login -->
+    </classes>
+  </test> <!-- FireFoxTests(failed) -->
+  <test name="ChromeTests(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="scripts.web.Login">
+        <methods>
+          <include name="setUpBeforeBaseMethod"/>
+          <include name="beforeTestBaseClass"/>
+          <include name="getdriver"/>
+          <include name="loginWithInvalidPassword" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="beforeTestSetUp"/>
+        </methods>
+      </class> <!-- scripts.web.Login -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

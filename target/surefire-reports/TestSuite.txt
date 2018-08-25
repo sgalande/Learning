@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.503 s <<< FAILURE! - in TestSuite
+beforeTestSetUp(scripts.web.Login)  Time elapsed: 7.659 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Unexpected error launching Internet Explorer. Browser zoom level was set to 150%. It should be set to 100% (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.98 seconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NPF0SKRSD', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: InternetExplorerDriver
+
+setUpBeforeBaseMethod(scripts.web.Login)  Time elapsed: 8.272 s  <<< FAILURE!
+java.lang.NullPointerException
+
+tearDown(scripts.web.Login)  Time elapsed: 8.557 s  <<< FAILURE!
+java.lang.NullPointerException
+
