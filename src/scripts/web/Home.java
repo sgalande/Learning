@@ -6,7 +6,6 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import driverCreation.Jira;
@@ -14,7 +13,7 @@ import driverCreation.TestBase;
 
 public class Home extends TestBase {
 
-	private final List<String>expectedMenus = Arrays.asList("ELECTRONICS","APPLIANCES","MEN","WOMEN","BABY & KIDS","HOME & FURNITURE","BOOKS & MORE","OFFER ZONE");
+	private final List<String>expectedMenus = Arrays.asList("ELECTRONICS","TVS & APPLIANCES","MEN","WOMEN","BABY & KIDS","HOME & FURNITURE","SPORTS,BOOKS & MORE","OFFER ZONE");
 	private static Logger Log = Logger.getLogger(Home.class);
 	
 	

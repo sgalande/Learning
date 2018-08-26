@@ -11,7 +11,6 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -91,7 +90,7 @@ public class WebElementLocator extends ToolHelperFactory {
 		}
 	}
 
-	public WebElement findElement(HashMap<String, String> params) 
+	public WebElement findElement(By by) 
 			 {
 		String visibility = "true";
 		WebElement element = null;
@@ -99,7 +98,7 @@ public class WebElementLocator extends ToolHelperFactory {
 		int waitTime = 30;
 		for (int i = 1; i <= waitTime; i++) {
 			try {
-				element = driver.findElement(getParamsBy(params));
+				element = driver.findElement(by);
 				if (element != null) {
 					break;
 				}
@@ -113,10 +112,10 @@ public class WebElementLocator extends ToolHelperFactory {
 		return element;
 	}
 
-	public boolean waitForElement(HashMap<String, String> params) {
+	public boolean waitForElement(By by) {
 
 		String visibility = "true";
-		WebElement element = findElement(params);
+		WebElement element = findElement(by);
 
 		if (visibility == "true") {
 			if (element != null) {
@@ -129,47 +128,7 @@ public class WebElementLocator extends ToolHelperFactory {
 		return false;
 	}
 
-	private By getParamsBy(HashMap<String, String> params) {
-		By by = null;
-		switch (params.get("searchBy")) {
-		case "id":
-			by = By.id(params.get("searchValue"));
-			break;
-
-		case "name":
-			by = By.name(params.get("searchValue"));
-			break;
-
-		case "classname":
-			by = By.className(params.get("searchValue"));
-			break;
-
-		case "xpath":
-			by = By.xpath(params.get("searchValue"));
-			break;
-
-		case "tagname":
-			by = By.tagName(params.get("searchValue"));
-			break;
-
-		case "cssselector":
-			by = By.cssSelector(params.get("searchValue"));
-			break;
-
-		case "linktext":
-			by = By.linkText(params.get("searchValue"));
-			break;
-
-		case "partiallinktext":
-			by = By.partialLinkText(params.get("searchValue"));
-			break;
-
-		default:
-			break;
-		}
-		return by;
-	}
-
+	
 	@Override
 	public void get(String url) {
 		driver.get(url);
@@ -182,8 +141,8 @@ public class WebElementLocator extends ToolHelperFactory {
 	}
 
 	@Override
-	public List<WebElement> findElements(HashMap<String, String> params) {
-		List<WebElement> elements = driver.findElements(getParamsBy(params));
+	public List<WebElement> findElements(By by) {
+		List<WebElement> elements = driver.findElements(by);
 		return elements;
 	}
 
@@ -221,4 +180,5 @@ public class WebElementLocator extends ToolHelperFactory {
 		  startx = size.width / 2;
         new TouchAction((MobileDriver<WebElement>) driver).press(startx, starty).waitAction(Duration.ofMillis(duration)).moveTo(endx, endy).release().perform();
 	}
+
 }

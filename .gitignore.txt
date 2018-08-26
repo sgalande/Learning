@@ -1,5 +1,5 @@
-# Ignored files
-*.class
-*.jar
-*.lst
-*/target/
+**/.classpath
+**/.project
+**/target-ide/*
+**/.settings
+*~

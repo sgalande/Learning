@@ -1,12 +1,10 @@
 package driverCreation;
 
 import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -16,8 +14,6 @@ import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
-import utility.Locator;
 
 
 public class TestBase {
@@ -46,9 +42,7 @@ public class TestBase {
 	
 	@Parameters({"browser"})
 	@BeforeTest (alwaysRun=true)
-	public void beforeTestSetUp(String browser) {
-		new SimpleDateFormat("MM-dd-yyyy HHmmss");
-		new Date();		
+	public void beforeTestSetUp(String browser) {	
 		extent.set(new ExtentReports(userDirectory+"/reports/"+browser+".html", true));
 		getExtentReport().loadConfig(new File(userDirectory+"/extent-config.xml"));
 		ToolHelperFactory.init(browser);
@@ -63,8 +57,8 @@ public class TestBase {
 	public void setUpBeforeBaseMethod() {
 		log.info("****************Opening Flipkart*****************");
 		ToolHelperFactory.getdriver().get("http://www.flipkart.com");
-		if(ToolHelperFactory.getdriver().waitForElement(Locator.byCssSelector("button._2AkmmA._29YdH8"))) {
-			ToolHelperFactory.getdriver().findElement(Locator.byCssSelector("button._2AkmmA._29YdH8")).click();
+		if(ToolHelperFactory.getdriver().waitForElement(By.cssSelector("button._2AkmmA._29YdH8"))) {
+			ToolHelperFactory.getdriver().findElement(By.cssSelector("button._2AkmmA._29YdH8")).click();
 		}
 	}
 	
