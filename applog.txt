@@ -4771,3 +4771,54 @@ INFO    2018-08-26 08:37:54,753 [TestNG-tests-2] driverCreation.WebElementLocato
 INFO    2018-08-26 08:37:55,394 [TestNG-tests-2] driverCreation.TestBase  - ****************Opening Flipkart*****************
 INFO    2018-08-26 08:37:58,754 [TestNG-tests-2] scripts.web.Home  - Verify Menu item
 INFO    2018-08-26 08:37:59,985 [TestNG-tests-2] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:03:21,733 [TestNG-tests-3] driverCreation.WebElementLocator  - *************Setting Firefox Path****************
+INFO    2018-08-26 15:03:21,733 [TestNG-tests-1] driverCreation.WebElementLocator  - *************Setting Chrome Path****************
+INFO    2018-08-26 15:03:21,733 [TestNG-tests-2] driverCreation.WebElementLocator  - *************Setting Firefox Path****************
+INFO    2018-08-26 15:03:29,150 [TestNG-tests-3] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:03:29,150 [TestNG-tests-1] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:03:35,811 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Enter Email Address***
+INFO    2018-08-26 15:03:35,811 [TestNG-tests-3] businessLogic.webpages.LoginPage  - *** Finding for Email Address TextBox***
+INFO    2018-08-26 15:03:35,949 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Enter Password***
+INFO    2018-08-26 15:03:35,949 [TestNG-tests-3] businessLogic.webpages.LoginPage  - *** Finding for Password  TextBox***
+INFO    2018-08-26 15:03:35,997 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Click On Login Button***
+INFO    2018-08-26 15:03:35,998 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Finding for Login Button***
+INFO    2018-08-26 15:03:36,035 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Verifying Error Message***
+INFO    2018-08-26 15:03:36,058 [TestNG-tests-3] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:03:36,298 [TestNG-tests-3] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:03:42,355 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Enter Email Address***
+INFO    2018-08-26 15:03:42,355 [TestNG-tests-3] businessLogic.webpages.LoginPage  - *** Finding for Email Address TextBox***
+INFO    2018-08-26 15:03:42,501 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Enter Password***
+INFO    2018-08-26 15:03:42,501 [TestNG-tests-3] businessLogic.webpages.LoginPage  - *** Finding for Password  TextBox***
+INFO    2018-08-26 15:03:42,927 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Click On Login Button***
+INFO    2018-08-26 15:03:42,927 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Finding for Login Button***
+INFO    2018-08-26 15:03:43,005 [TestNG-tests-3] businessLogic.webpages.LoginPage  - ***Verifying Error Message***
+INFO    2018-08-26 15:03:43,399 [TestNG-tests-3] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:03:43,946 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Enter Email Address***
+INFO    2018-08-26 15:03:43,947 [TestNG-tests-1] businessLogic.webpages.LoginPage  - *** Finding for Email Address TextBox***
+INFO    2018-08-26 15:03:47,730 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Enter Password***
+INFO    2018-08-26 15:03:47,730 [TestNG-tests-1] businessLogic.webpages.LoginPage  - *** Finding for Password  TextBox***
+INFO    2018-08-26 15:03:47,869 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Click On Login Button***
+INFO    2018-08-26 15:03:47,869 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Finding for Login Button***
+INFO    2018-08-26 15:03:48,060 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Verifying Error Message***
+INFO    2018-08-26 15:03:49,596 [TestNG-tests-1] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:03:50,802 [TestNG-tests-1] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:03:55,629 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Enter Email Address***
+INFO    2018-08-26 15:03:55,629 [TestNG-tests-1] businessLogic.webpages.LoginPage  - *** Finding for Email Address TextBox***
+INFO    2018-08-26 15:03:56,261 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Enter Password***
+INFO    2018-08-26 15:03:56,261 [TestNG-tests-1] businessLogic.webpages.LoginPage  - *** Finding for Password  TextBox***
+INFO    2018-08-26 15:03:56,444 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Click On Login Button***
+INFO    2018-08-26 15:03:56,444 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Finding for Login Button***
+INFO    2018-08-26 15:03:56,682 [TestNG-tests-1] businessLogic.webpages.LoginPage  - ***Verifying Error Message***
+INFO    2018-08-26 15:03:57,518 [TestNG-tests-1] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:03:57,998 [TestNG-tests-1] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:04:00,257 [TestNG-tests-1] scripts.web.Home  - Verify Menu Navigation
+INFO    2018-08-26 15:04:01,631 [TestNG-tests-1] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:04:02,686 [TestNG-tests-1] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:04:05,257 [TestNG-tests-1] scripts.web.Home  - Verify Menu item
+INFO    2018-08-26 15:04:06,073 [TestNG-tests-1] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:04:08,422 [TestNG-tests-2] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:04:15,728 [TestNG-tests-2] scripts.web.Home  - Verify Menu Navigation
+INFO    2018-08-26 15:04:16,267 [TestNG-tests-2] driverCreation.WebElementLocator  - Capturing Screenshot
+INFO    2018-08-26 15:04:16,355 [TestNG-tests-2] driverCreation.TestBase  - ****************Opening Flipkart*****************
+INFO    2018-08-26 15:04:19,149 [TestNG-tests-2] scripts.web.Home  - Verify Menu item
+INFO    2018-08-26 15:04:20,300 [TestNG-tests-2] driverCreation.WebElementLocator  - Capturing Screenshot
