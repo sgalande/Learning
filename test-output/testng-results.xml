@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" ignored="3" total="11" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FlipKartExecutionSuite" duration-ms="83633" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:08:04Z">
+    <groups>
+    </groups>
+    <test name="IE suite" duration-ms="52140" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:07:32Z">
+      <class name="scripts.web.Login">
+        <test-method status="PASS" signature="getdriver()[pri:0, instance:scripts.web.Login@6e6c3152]" name="getdriver" is-config="true" duration-ms="54" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:06:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdriver -->
+        <test-method status="PASS" signature="beforeTestSetUp(java.lang.String)[pri:0, instance:scripts.web.Login@6e6c3152]" name="beforeTestSetUp" is-config="true" duration-ms="10871" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetUp -->
+        <test-method status="PASS" signature="beforeTestBaseClass()[pri:0, instance:scripts.web.Login@6e6c3152]" name="beforeTestBaseClass" is-config="true" duration-ms="0" started-at="2018-08-26T03:06:51Z" finished-at="2018-08-26T03:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestBaseClass -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Login@6e6c3152]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="17903" started-at="2018-08-26T03:06:51Z" finished-at="2018-08-26T03:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="PASS" signature="loginWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.web.Login@6e6c3152]" name="loginWithInvalidPassword" duration-ms="982" started-at="2018-08-26T03:07:09Z" description="Verify Login with Invalid password" data-provider="Authentication" finished-at="2018-08-26T03:07:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test.gal12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter valid Email ID/Mobile number]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Login@6e6c3152]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="4543" started-at="2018-08-26T03:07:10Z" finished-at="2018-08-26T03:07:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="loginWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.web.Login@6e6c3152]" name="loginWithInvalidPassword" duration-ms="1788" started-at="2018-08-26T03:07:15Z" description="Verify Login with Invalid password" data-provider="Authentication" finished-at="2018-08-26T03:07:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tesdsst@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[swap]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username or password is not correct]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at businessLogic.webpages.LoginPage.verifyInvalidErrorMessage(LoginPage.java:49)
+at scripts.web.Login.loginWithInvalidPassword(Login.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scripts.web.Login@6e6c3152]" name="tearDown" is-config="true" duration-ms="15447" started-at="2018-08-26T03:07:17Z" finished-at="2018-08-26T03:07:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scripts.web.Login -->
+    </test> <!-- IE suite -->
+    <test name="Chrome suite" duration-ms="53937" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:07:34Z">
+      <class name="scripts.web.Home">
+        <test-method status="PASS" signature="beforeTestBaseClass()[pri:0, instance:scripts.web.Home@6c3708b3]" name="beforeTestBaseClass" is-config="true" duration-ms="0" started-at="2018-08-26T03:07:15Z" finished-at="2018-08-26T03:07:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestBaseClass -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Home@6c3708b3]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="4689" started-at="2018-08-26T03:07:15Z" finished-at="2018-08-26T03:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="goToMenu()[pri:0, instance:scripts.web.Home@6c3708b3]" name="goToMenu" duration-ms="3031" started-at="2018-08-26T03:07:20Z" description="Verify Menu Navigation" finished-at="2018-08-26T03:07:23Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Must provide a location for a move action.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Must provide a location for a move action.
+at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:38)
+at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:388)
+at driverCreation.WebElementLocator.moveToElement(WebElementLocator.java:140)
+at businessLogic.webpages.HomePage.goToMenu(HomePage.java:44)
+at scripts.web.Home.goToMenu(Home.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMenu -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Home@6c3708b3]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="4969" started-at="2018-08-26T03:07:24Z" finished-at="2018-08-26T03:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="verifyHomePageMainMenus()[pri:0, instance:scripts.web.Home@6c3708b3]" name="verifyHomePageMainMenus" duration-ms="1813" started-at="2018-08-26T03:07:29Z" description="Verify Main Menu on HomePage" finished-at="2018-08-26T03:07:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [6]: SPORTS,BOOKS & MORE != SPORTS, BOOKS & MORE expected [SPORTS,BOOKS & MORE] but found [SPORTS, BOOKS & MORE]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [6]: SPORTS,BOOKS & MORE != SPORTS, BOOKS & MORE expected [SPORTS,BOOKS & MORE] but found [SPORTS, BOOKS & MORE]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:831)
+at org.testng.Assert.assertEquals(Assert.java:796)
+at scripts.web.Home.verifyHomePageMainMenus(Home.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageMainMenus -->
+      </class> <!-- scripts.web.Home -->
+      <class name="scripts.web.Login">
+        <test-method status="PASS" signature="beforeTestSetUp(java.lang.String)[pri:0, instance:scripts.web.Login@520a3426]" name="beforeTestSetUp" is-config="true" duration-ms="5533" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:06:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetUp -->
+        <test-method status="PASS" signature="beforeTestBaseClass()[pri:0, instance:scripts.web.Login@520a3426]" name="beforeTestBaseClass" is-config="true" duration-ms="32" started-at="2018-08-26T03:06:45Z" finished-at="2018-08-26T03:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestBaseClass -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Login@520a3426]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="16782" started-at="2018-08-26T03:06:46Z" finished-at="2018-08-26T03:07:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="loginWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.web.Login@520a3426]" name="loginWithInvalidPassword" duration-ms="1285" started-at="2018-08-26T03:07:03Z" description="Verify Login with Invalid password" data-provider="Authentication" finished-at="2018-08-26T03:07:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test.gal12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter valid Email ID/Mobile number]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at businessLogic.webpages.LoginPage.enterEmailAddress(LoginPage.java:33)
+at businessLogic.webpages.LoginPage.doLogin(LoginPage.java:21)
+at scripts.web.Login.loginWithInvalidPassword(Login.java:17)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Login@520a3426]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="5902" started-at="2018-08-26T03:07:06Z" finished-at="2018-08-26T03:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="loginWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.web.Login@520a3426]" name="loginWithInvalidPassword" duration-ms="3099" started-at="2018-08-26T03:07:12Z" description="Verify Login with Invalid password" data-provider="Authentication" finished-at="2018-08-26T03:07:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tesdsst@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[swap]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username or password is not correct]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at businessLogic.webpages.LoginPage.verifyInvalidErrorMessage(LoginPage.java:49)
+at scripts.web.Login.loginWithInvalidPassword(Login.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scripts.web.Login@520a3426]" name="tearDown" is-config="true" duration-ms="2592" started-at="2018-08-26T03:07:31Z" finished-at="2018-08-26T03:07:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scripts.web.Login -->
+    </test> <!-- Chrome suite -->
+    <test name="Firefox suite" duration-ms="83633" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:08:04Z">
+      <class name="scripts.web.Home">
+        <test-method status="PASS" signature="beforeTestSetUp(java.lang.String)[pri:0, instance:scripts.web.Home@2758fe70]" name="beforeTestSetUp" is-config="true" duration-ms="51894" started-at="2018-08-26T03:06:40Z" finished-at="2018-08-26T03:07:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetUp -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Home@2758fe70]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="21533" started-at="2018-08-26T03:07:32Z" finished-at="2018-08-26T03:07:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="PASS" signature="beforeTestBaseClass()[pri:0, instance:scripts.web.Home@2758fe70]" name="beforeTestBaseClass" is-config="true" duration-ms="0" started-at="2018-08-26T03:07:32Z" finished-at="2018-08-26T03:07:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestBaseClass -->
+        <test-method status="FAIL" signature="goToMenu()[pri:0, instance:scripts.web.Home@2758fe70]" name="goToMenu" duration-ms="919" started-at="2018-08-26T03:07:53Z" description="Verify Menu Navigation" finished-at="2018-08-26T03:07:54Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Must provide a location for a move action.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Must provide a location for a move action.
+at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:38)
+at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:388)
+at driverCreation.WebElementLocator.moveToElement(WebElementLocator.java:140)
+at businessLogic.webpages.HomePage.goToMenu(HomePage.java:44)
+at scripts.web.Home.goToMenu(Home.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMenu -->
+        <test-method status="PASS" signature="setUpBeforeBaseMethod()[pri:0, instance:scripts.web.Home@2758fe70]" name="setUpBeforeBaseMethod" is-config="true" duration-ms="3357" started-at="2018-08-26T03:07:55Z" finished-at="2018-08-26T03:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeBaseMethod -->
+        <test-method status="FAIL" signature="verifyHomePageMainMenus()[pri:0, instance:scripts.web.Home@2758fe70]" name="verifyHomePageMainMenus" duration-ms="1232" started-at="2018-08-26T03:07:58Z" description="Verify Main Menu on HomePage" finished-at="2018-08-26T03:07:59Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [6]: SPORTS,BOOKS & MORE != SPORTS, BOOKS & MORE expected [SPORTS,BOOKS & MORE] but found [SPORTS, BOOKS & MORE]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [6]: SPORTS,BOOKS & MORE != SPORTS, BOOKS & MORE expected [SPORTS,BOOKS & MORE] but found [SPORTS, BOOKS & MORE]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:831)
+at org.testng.Assert.assertEquals(Assert.java:796)
+at scripts.web.Home.verifyHomePageMainMenus(Home.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageMainMenus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scripts.web.Home@2758fe70]" name="tearDown" is-config="true" duration-ms="3791" started-at="2018-08-26T03:08:00Z" finished-at="2018-08-26T03:08:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scripts.web.Home -->
+    </test> <!-- Firefox suite -->
+  </suite> <!-- FlipKartExecutionSuite -->
+</testng-results>

@@ -10,10 +10,10 @@
 			<class name="scripts.web.Home" />
 		</classes>
 	</test> 
-	  <test name="Firefox suite">
+	   <test name="Firefox suite">
 		<parameter name="browser" value="Firefox"></parameter>
 		<classes>
-			<class name="scripts.web.Login" />
+			
 			<class name="scripts.web.Home" />
 		</classes>
 	</test> 
@@ -22,9 +22,9 @@
 		<parameter name="browser" value="IE"></parameter>
 		<classes>
 			<class name="scripts.web.Login" />
-			<class name="scripts.web.Home" />
+			
 		</classes>
-	</test> --> 
+	</test> 
 	<!-- <test name="Android suite">
 		<parameter name="browser" value="Android"></parameter>
 		<classes>

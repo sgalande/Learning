@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">FlipKartExecutionSuite</th></tr>
+<tr><td><a href="#t0">IE suite</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,140</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Chrome suite</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">53,937</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Firefox suite</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">83,633</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">7</th><th class="num">189,710</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FlipKartExecutionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">IE suite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts.web.Login</td><td><a href="#m0">loginWithInvalidPassword</a></td><td rowspan="1">1535252835106</td><td rowspan="1">1788</td></tr><tr><th colspan="4">IE suite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts.web.Login</td><td><a href="#m1">loginWithInvalidPassword</a></td><td rowspan="1">1535252829301</td><td rowspan="1">982</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Chrome suite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">scripts.web.Home</td><td><a href="#m2">goToMenu</a></td><td rowspan="1">1535252840405</td><td rowspan="1">3031</td></tr><tr class="failedeven"><td><a href="#m3">verifyHomePageMainMenus</a></td><td rowspan="1">1535252849414</td><td rowspan="1">1813</td></tr><tr class="failedodd"><td rowspan="2">scripts.web.Login</td><td><a href="#m4">loginWithInvalidPassword</a></td><td rowspan="2">1535252823409</td><td rowspan="2">1285</td></tr><tr class="failedodd"><td><a href="#m5">loginWithInvalidPassword</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Firefox suite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">scripts.web.Home</td><td><a href="#m6">goToMenu</a></td><td rowspan="1">1535252873834</td><td rowspan="1">919</td></tr><tr class="failedeven"><td><a href="#m7">verifyHomePageMainMenus</a></td><td rowspan="1">1535252878751</td><td rowspan="1">1232</td></tr></tbody>
+</table>
+<h2>IE suite</h2><h3 id="m0">scripts.web.Login#loginWithInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tesdsst@gmail.com</td><td>swap</td><td>Your username or password is not correct</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
+	at businessLogic.webpages.LoginPage.verifyInvalidErrorMessage(LoginPage.java:49)
+	at scripts.web.Login.loginWithInvalidPassword(Login.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts.web.Login#loginWithInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>test.gal12</td><td>1234.0</td><td>Please enter valid Email ID/Mobile number</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome suite</h2><h3 id="m2">scripts.web.Home#goToMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Must provide a location for a move action.
+	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:38)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:388)
+	at driverCreation.WebElementLocator.moveToElement(WebElementLocator.java:140)
+	at businessLogic.webpages.HomePage.goToMenu(HomePage.java:44)
+	at scripts.web.Home.goToMenu(Home.java:32)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts.web.Home#verifyHomePageMainMenus</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Lists differ at element [6]: SPORTS,BOOKS &amp; MORE != SPORTS, BOOKS &amp; MORE expected [SPORTS,BOOKS &amp; MORE] but found [SPORTS, BOOKS &amp; MORE]
+	at scripts.web.Home.verifyHomePageMainMenus(Home.java:25)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts.web.Login#loginWithInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>test.gal12</td><td>1234.0</td><td>Please enter valid Email ID/Mobile number</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
+	at businessLogic.webpages.LoginPage.enterEmailAddress(LoginPage.java:33)
+	at businessLogic.webpages.LoginPage.doLogin(LoginPage.java:21)
+	at scripts.web.Login.loginWithInvalidPassword(Login.java:17)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts.web.Login#loginWithInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tesdsst@gmail.com</td><td>swap</td><td>Your username or password is not correct</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
+	at businessLogic.webpages.LoginPage.verifyInvalidErrorMessage(LoginPage.java:49)
+	at scripts.web.Login.loginWithInvalidPassword(Login.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Firefox suite</h2><h3 id="m6">scripts.web.Home#goToMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Must provide a location for a move action.
+	at org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:38)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:388)
+	at driverCreation.WebElementLocator.moveToElement(WebElementLocator.java:140)
+	at businessLogic.webpages.HomePage.goToMenu(HomePage.java:44)
+	at scripts.web.Home.goToMenu(Home.java:32)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">scripts.web.Home#verifyHomePageMainMenus</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Lists differ at element [6]: SPORTS,BOOKS &amp; MORE != SPORTS, BOOKS &amp; MORE expected [SPORTS,BOOKS &amp; MORE] but found [SPORTS, BOOKS &amp; MORE]
+	at scripts.web.Home.verifyHomePageMainMenus(Home.java:25)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
