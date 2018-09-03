@@ -46,7 +46,7 @@ public class WebElementLocator extends ToolHelperFactory {
 	
 		if(browser.equalsIgnoreCase("Chrome")) {
         	log.info("*************Setting Chrome Path****************");
-    		System.setProperty("webdriver.chrome.driver",userDirectory+"/drivers/chromedriver.exe");
+    		System.setProperty("webdriver.chrome.driver",userDirectory+"/drivers/chromedriver1");
     		driver = new ChromeDriver();
     		driver.manage().window().maximize();
     		wait = new WebDriverWait(driver, 30);
@@ -108,6 +108,7 @@ public class WebElementLocator extends ToolHelperFactory {
 				} 
 			}
 		}
+		
 		
 		return element;
 	}
