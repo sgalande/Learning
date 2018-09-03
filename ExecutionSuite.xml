@@ -10,25 +10,5 @@
 			<class name="scripts.web.Home" />
 		</classes>
 	</test> 
-	   <test name="Firefox suite">
-		<parameter name="browser" value="Firefox"></parameter>
-		<classes>
-			
-			<class name="scripts.web.Home" />
-		</classes>
-	</test> 
-
-	 <test name="IE suite">
-		<parameter name="browser" value="IE"></parameter>
-		<classes>
-			<class name="scripts.web.Login" />
-			
-		</classes>
-	</test> 
-	<!-- <test name="Android suite">
-		<parameter name="browser" value="Android"></parameter>
-		<classes>
-			<class name="scripts.mobile.Login" />
-		</classes>
-	</test> --> -->
-</suite>
+	
+	</suite>
