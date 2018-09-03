@@ -22,7 +22,7 @@
 				<version>2.22.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>myTemp.xml</suiteXmlFile>
+						<suiteXmlFile>ExecutionSuite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
